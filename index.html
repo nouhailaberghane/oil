@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زيت شعر هندي - الصفحة الرئيسية</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Free Delivery Banner */
+        .free-delivery {
+            background-color: #4CAF50; /* Green color */
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.2rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1001; /* Above the navbar */
+        }
+        
+        .navbar .logo {
+            width: 100%; /* Full width container */
+            text-align: center; /* Center content inside the logo container */
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #fff;
+            padding: 0px ;
+            display: flex;
+            justify-content: center; /* Center the logo */
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 40px; /* Positioned below the free delivery banner */
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .logo img {
+            width: 30%; /* Adjust logo size as needed */
+            margin-bottom: 0px;
+        }
+
+        /* Global Styles */
+        body {
+            color: #333;
+            line-height: 1.6;
+            margin-top: 110px; /* Space for fixed navbar and banner */
+            direction: rtl;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #8B4513;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Image Above Button */
+        .hero img {
+            width: 100%;
+            max-width: auto; /* Limit image width */
+        }
+
+        /* Sticky CTA Button at Bottom */
+        .cta-bottom {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ff9822; /* CTA color */
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1002; /* Above other elements */
+            animation: pulse 2s infinite; /* Pulsing animation */
+        }
+
+        @keyframes pulse {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.05; /* Slightly larger */
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+        /* Responsive Styles for Desktop */
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Responsive Styles for Mobile */
+        @media (max-width: 767px) {
+            .cta-bottom {
+                width: 90%; /* Full width on mobile */
+                padding: 10px 20px; /* Smaller padding */
+                font-size: 0.9rem; /* Slightly smaller font size */
+                bottom: 10px; /* Lower position */
+                left: 5%; /* Centered with padding */
+                transform: none; /* No need to center with transform */
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Free Delivery Banner -->
+    <div class="free-delivery">
+        توصيل مجاني لجميع انحاء المغرب
+    </div>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.webp" alt="Logo">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <img src="hero.jpeg" alt="زيت الشعر الهندي">
+            <img src="1.jpeg" alt="زيت الشعر الهندي">
+        </div>
+    </section>
+
+    <!-- Sticky CTA Button -->
+    <a href="form.html" class="cta-bottom" >اطلب الآن</a>
+
+</body>
+</html>
